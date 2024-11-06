@@ -7,35 +7,120 @@
     <title>Document</title>
   </head>
   <body class="bg-gray-200 overflow-x-hidden">
-    <div class="container p-4">
-      <div class="flex items-center justify-between">
+    <div class="container px-4">
+      <!-- top header -->
+      <div class="flex items-center justify-between h-16">
         <!-- left side -->
         <div class="text-[#686868] text-[12px]">
           Free Carbon Neutral Shipping | 60 Day Returns | 100 Day Mattress
         </div>
         <!-- right side -->
-        <ul>
-          <li>
-            <a href="#" class="bg-black text-2xl">About Us</a>
-          </li>
-          <li>
-            <a href="#">Sustainability</a>
-          </li>
-          <li>
-            <a href="#">Trade</a>
-          </li>
-          <li>
-            <a href="#">Design Services</a>
-          </li>
-          <li>
-            <a href="#">Stores</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+        <!-- navbar-->
+        <div class="flex items-center gap-2 h-full">
+          <button
+            type="button"
+            class="lg:hidden"
+            id="menu-button"
+            onclick="toggleMenu()"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <ul class="hidden lg:flex items-center gap-4" id="navbar">
+            <li>
+              <a href="#" class="active-link text-[12px] font-medium"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium"
+                >Sustainability</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Trade</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Design Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Stores</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Blog</a
+              >
+            </li>
+          </ul>
+
+          <!-- menu small screens -->
+          <ul
+            class="lg:hidden flex flex-col gap-4 absolute left-0 top-16 h-[calc(100vh-64px)] w-full bg-white text-white justify-center items-center z-10"
+            id="navbar-mobile"
+          >
+            <li>
+              <a href="#" class="active-link text-[12px] font-medium"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium"
+                >Sustainability</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Trade</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Design Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Stores</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#787878] text-[12px] font-medium">
+                Blog</a
+              >
+            </li>
+          </ul>
+
+          <!-- language -->
+          <select
+            class="bg-transparent outline-none text-[#9BABB5] text-[12px]"
+          >
+            <option class="">US</option>
+            <option class="">AR</option>
+          </select>
+        </div>
       </div>
       <div>main header</div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
