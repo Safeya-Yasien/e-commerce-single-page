@@ -14,6 +14,9 @@ body {
   @apply bg-amber-dark;
   @apply text-white;
 }
-.scrollbar-hide{
+.scrollbar-hide {
   scrollbar-width: none;
+}
+i {
+  line-height: 0 !important;
 }
