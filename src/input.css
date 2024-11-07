@@ -9,3 +9,8 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.active-pagination-number {
+  @apply bg-amber-dark;
+  @apply text-white;
+}

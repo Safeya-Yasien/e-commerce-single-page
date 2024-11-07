@@ -20,7 +20,7 @@
     <title>Document</title>
   </head>
   <body class="bg-gray-very-light overflow-x-hidden">
-    <div class="container px-8 h-screen">
+    <div class="container px-12 h-screen">
       <!-- top header -->
       <div class="flex items-center justify-between h-16">
         <!-- left side -->
@@ -218,9 +218,10 @@
       </ul>
 
       <!-- content -->
-      <div class="flex flex-col lg:flex-row gap-16">
+      <div class="flex flex-col lg:flex-row gap-16 mt-4">
         <!-- left side -->
-        <div class="w-full lg:w-3/4">
+        <div class="w-full lg:w-3/4 flex flex-col gap-6">
+          <!-- product preview -->
           <div class="bg-white p-8 flex gap-8">
             <!-- imgs -->
             <div class="relative w-1/2">
@@ -300,7 +301,7 @@
               <div class="h-[1px] bg-gray-200-custom"></div>
 
               <div class="flex flex-col gap-3">
-                <h4 class="uppercase text-sm font-[400] text-[#374957]">
+                <h4 class="uppercase text-sm font-normal text-[#374957]">
                   Color
                 </h4>
                 <ul class="flex items-center gap-2">
@@ -316,6 +317,253 @@
                   <li class="w-[22px] h-[22px] rounded-full bg-[#1E1E1E]"></li>
                   <li class="w-[22px] h-[22px] rounded-full bg-[#FEAB2F]"></li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- reviews -->
+          <div class="bg-white p-8">
+            <!-- filter review bar -->
+            <ul class="flex items-center justify-center gap-4">
+              <li>
+                <button class="font-medium text-sm text-[#787878]">
+                  About
+                </button>
+              </li>
+              <li>
+                <button class="font-medium text-sm text-[#787878]">
+                  Details
+                </button>
+              </li>
+              <li>
+                <button class="font-medium text-sm text-[#787878]">
+                  Materials + Care
+                </button>
+              </li>
+              <li>
+                <button class="font-medium text-sm text-[#787878]">
+                  Shipping + Returns
+                </button>
+              </li>
+              <li
+                class="relative before:content-[''] before:absolute before:-bottom-4 before: before:w-full before:h-[2px] before:bg-[#BEAF7C]"
+              >
+                <button class="font-medium text-sm text-[#787878]">
+                  Reviews
+                </button>
+                <span
+                  class="absolute top-0 -right-2 text-[#BEAF7C] text-[12px] font-semibold"
+                  >2</span
+                >
+              </li>
+            </ul>
+            <div class="h-[1px] bg-gray-200-custom mt-[15px] mb-[15px]"></div>
+
+            <!-- comments -->
+            <div class="mt-16 flex flex-col gap-10">
+              <!-- person name + rate -->
+              <div class="flex flex-col gap-6">
+                <div class="flex justify-between">
+                  <!-- img + name -->
+                  <div class="flex gap-3">
+                    <img src="images/testimonial-1.png" alt="testimonial-1" />
+                    <div>
+                      <h4 class="font-medium text-sm text-[#374957] mb-1">
+                        Ahmed Mohamed
+                      </h4>
+                      <p class="font-normal text-[10px] text-[#00000080]">
+                        24 January 2023
+                      </p>
+                    </div>
+                  </div>
+                  <!-- rate -->
+                  <ul class="flex items-center gap-2">
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-star text-[#00000080] text-lg"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-star text-[#00000080] text-lg"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+                <p class="font-normal text-sm text-[#000000B2]">
+                  Changing our bedroom from blues to earth tones. The raisin
+                  duvet cover goes perfectly with other earth tones. Love the
+                  feel of percale and how it keeps me cool as a hot sleeper.
+                </p>
+              </div>
+
+              <div class="h-[1px] bg-gray-200-custom"></div>
+
+              <div class="flex flex-col gap-6">
+                <div class="flex justify-between">
+                  <!-- img + name -->
+                  <div class="flex gap-3">
+                    <img src="images/testimonial-2.png" alt="testimonial-2" />
+                    <div>
+                      <h4 class="font-medium text-sm text-[#374957] mb-1">
+                        Ahmed Mohamed
+                      </h4>
+                      <p class="font-normal text-[10px] text-[#00000080]">
+                        24 January 2023
+                      </p>
+                    </div>
+                  </div>
+                  <!-- rate -->
+                  <ul class="flex items-center gap-2">
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-star text-[#00000080] text-lg"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-regular fa-star text-[#00000080] text-lg"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+                <p class="font-normal text-sm text-[#000000B2]">
+                  Changing our bedroom from blues to earth tones. The raisin
+                  duvet cover goes perfectly with other earth tones. Love the
+                  feel of percale and how it keeps me cool as a hot sleeper.
+                </p>
+              </div>
+
+              <div class="h-[1px] bg-gray-200-custom"></div>
+
+              <!-- pagination -->
+              <div class="flex items-center justify-center gap-4">
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                >
+                  1
+                </button>
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                >
+                  2
+                </button>
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center active-pagination-number"
+                >
+                  3
+                </button>
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                >
+                  4
+                </button>
+
+                <button
+                  class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+
+              <!-- write review form -->
+              <div class="flex flex-col gap-4">
+                <h2 class="font-semibold text-xl text-[#374957]">
+                  Write A Review
+                </h2>
+                <form class="flex flex-col gap-4">
+                  <div class="flex gap-4">
+                    <div class="flex flex-col gap-1 w-2/6">
+                      <label
+                        for="stars"
+                        class="font-normal text-[10px] text-[#374957]"
+                      >
+                        Review Stars
+                      </label>
+                      <input
+                        type="number"
+                        id="stars"
+                        name="stars"
+                        placeholder="5 Stars Rating"
+                        class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-1 w-2/6">
+                      <label
+                        for="name"
+                        class="font-normal text-[10px] text-[#374957]"
+                      >
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-1 w-2/6">
+                      <label
+                        for="email"
+                        class="font-normal text-[10px] text-[#374957]"
+                      >
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder=" Email Address"
+                        class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-1 w-full">
+                    <label
+                      for="review"
+                      class="font-normal text-[10px] text-[#374957]"
+                    >
+                      Your Review
+                    </label>
+                    <textarea
+                      class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none h-36 resize-none"
+                    >
+                    </textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="rounded-md bg-amber-dark text-white font-semibold text-[11px] w-[150px] h-[40px] flex items-center justify-center cursor-pointer"
+                  >
+                    Post Your Review
+                  </button>
+                </form>
               </div>
             </div>
           </div>
