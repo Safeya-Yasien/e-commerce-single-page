@@ -14,3 +14,6 @@ body {
   @apply bg-amber-dark;
   @apply text-white;
 }
+.scrollbar-hide{
+  scrollbar-width: none;
+}
