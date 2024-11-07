@@ -13,6 +13,9 @@ module.exports = {
         center: "true",
         padding: "1rem",
       },
+      boxShadow: {
+        custom: "0 4px 6px #00000017",
+      },
     },
   },
   plugins: [],

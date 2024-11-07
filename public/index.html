@@ -174,7 +174,7 @@
 
       <div class="h-[1px] bg-gray-200-custom mt-[15px] mb-[15px]"></div>
       <!-- filter -->
-      <ul class="flex items-center justify-center gap-3 py-2">
+      <ul class="flex items-center justify-center flex-wrap gap-3 py-2">
         <li>
           <select class="bg-transparent outline-none text-[#262626]">
             <option>Bedding</option>
@@ -218,16 +218,22 @@
       </ul>
 
       <!-- content -->
-      <div class="flex flex-col lg:flex-row gap-16 mt-4">
+      <div class="flex flex-col lg:flex-row gap-8 mt-4">
         <!-- left side -->
-        <div class="w-full lg:w-3/4 flex flex-col gap-6">
+        <div class="w-full lg:w-[70%] flex flex-col gap-6">
           <!-- product preview -->
-          <div class="bg-white p-8 flex gap-8">
+          <div
+            class="bg-white p-8 flex flex-col lg:flex-row gap-8 rounded-md shadow-custom"
+          >
             <!-- imgs -->
-            <div class="relative w-1/2">
+            <div class="relative w-full lg:w-1/2">
               <!-- main img -->
-              <div>
-                <img src="images/default-product.png" alt="" />
+              <div class="relative flex items-center justify-center">
+                <img
+                  src="images/default-product.png"
+                  alt=""
+                  class="object-cover"
+                />
               </div>
               <!-- small imgs -->
               <div class="flex justify-between gap-4 mt-8">
@@ -252,7 +258,7 @@
               </button>
             </div>
             <!-- info -->
-            <div class="flex flex-col gap-6 w-1/2">
+            <div class="flex flex-col gap-6 w-full lg:w-1/2">
               <h1 class="text-[#374957] text-[22px] font-[600]">
                 Brushed Cotton Venice Set
               </h1>
@@ -338,9 +344,9 @@
           </div>
 
           <!-- reviews -->
-          <div class="bg-white p-8">
+          <div class="bg-white p-8 rounded-md shadow-custom">
             <!-- filter review bar -->
-            <ul class="flex items-center justify-center gap-4">
+            <ul class="flex items-center justify-center flex-wrap gap-4">
               <li>
                 <button class="font-medium text-sm text-[#787878]">
                   About
@@ -585,7 +591,132 @@
           </div>
         </div>
         <!-- right side -->
-        <div class="w-full lg:w-3/12">right</div>
+        <div class="w-full lg:w-[30%] flex flex-col gap-6">
+          <!-- sizes -->
+          <div
+            class="bg-white p-8 flex flex-col gap-5 rounded-md shadow-custom"
+          >
+            <!-- price  -->
+            <div class="flex items-center justify-between">
+              <h2 class="font-medium text-2xl text-[#374957]">$1,499.00</h2>
+              <p
+                class="bg-amber-dark text-white rounded-3xl py-1 px-4 text-[13px]"
+              >
+                In Stock
+              </p>
+            </div>
+            <div class="h-[1px] bg-gray-200-custom"></div>
+
+            <p class="font-medium text-[12px] text-[#374957CC]">
+              As low as $33 every 2 weeks with Affirm.
+              <a href="#" class="text-amber-dark"> Learn more </a>
+            </p>
+            <div class="h-[1px] bg-gray-200-custom"></div>
+
+            <div class="flex flex-col gap-4">
+              <h4 class="text-sm font-medium text-[#374957]">Size: Twin XL</h4>
+              <ul class="flex items-center flex-wrap gap-2">
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  Twin
+                </li>
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  Twin XL
+                </li>
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  Full
+                </li>
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  Queen
+                </li>
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  King
+                </li>
+                <li
+                  class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
+                >
+                  Cal King
+                </li>
+              </ul>
+            </div>
+
+            <div class="h-[1px] bg-gray-200-custom"></div>
+
+            <div class="flex items-center justify-center gap-2">
+              <div
+                class="bg-gray-200-custom rounded-md flex items-center justify-between py-2 px-4 w-[100px] text-[#495663]"
+              >
+                <button class="">-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+              <button
+                class="bg-amber-dark text-white font-medium text-[15px] rounded-md w-[150px] h-[40px]"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+
+          <!-- perfection -->
+          <div
+            class="bg-white p-8 flex flex-col gap-5 rounded-md shadow-custom"
+          >
+            <h2 class="font-normal text-xl text-[#3B3B3B]">Plush Perfection</h2>
+
+            <ul class="flex flex-col gap-6">
+              <li class="flex gap-4 items-center">
+                <div>
+                  <img src="images/perfection-1.png" alt="perfection-1" />
+                </div>
+                <div>
+                  <p class="font-medium text-sm text-[#3B3B3B]">
+                    See it in Person
+                  </p>
+                  <a
+                    href="#"
+                    class="text-amber-dark font-normal text-[13px] underline"
+                    >Find a store</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div>
+                  <img src="images/perfection-2.png" alt="perfection-2" />
+                </div>
+                <div>
+                  <p class="font-medium text-sm text-[#3B3B3B]">
+                    See it in Person
+                  </p>
+                  <a
+                    href="#"
+                    class="text-amber-dark font-normal text-[13px] underline"
+                    >Find a store</a
+                  >
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <div>
+                  <img src="images/perfection-3.png" alt="perfection 3" />
+                </div>
+                <div>
+                  <p class="font-medium text-sm text-[#3B3B3B]">
+                    Climate Neutral Shipping + Returns
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- new arrivals -->
@@ -976,7 +1107,7 @@
 
       <!-- features -->
       <div
-        class="flex items-center p-8 px-16 bg-white mt-16 shadow-2xl rounded-md gap-12 justify-between"
+        class="flex items-center p-8 px-16 bg-white mt-4 shadow-2xl rounded-md gap-12 justify-between relative -bottom-10 flex-wrap"
       >
         <div class="flex items-center gap-4">
           <div>
@@ -1018,11 +1149,14 @@
 
       <!-- footer -->
     </div>
+
     <!-- footer -->
     <footer class="bg-[#333333]">
-      <div class="py-20 px-16 text-sm flex gap-10">
+      <div
+        class="text-sm gap-10 py-24 px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]"
+      >
         <!-- first col -->
-        <div class="text-white flex flex-col gap-8 w-2/5 leading-10">
+        <div class="text-white flex flex-col gap-8 leading-10">
           <p class="font-medium text-[22px]">
             Parachute&reg;; is a registered trademark of Parachute Home Inc. in
             the US and certain other jurisdictions.
@@ -1095,7 +1229,7 @@
         </div>
 
         <!-- second col -->
-        <div class="w-1/5">
+        <div class="">
           <h2 class="text-white font-medium text-[22px] mb-6">Help</h2>
           <ul class="flex flex-col gap-4">
             <li>
@@ -1152,7 +1286,7 @@
         </div>
 
         <!-- third col -->
-        <div class="w-1/5">
+        <div class="">
           <h2 class="text-white font-medium text-[22px] mb-6">Company</h2>
           <ul class="flex flex-col gap-4">
             <li>
@@ -1223,7 +1357,7 @@
         </div>
 
         <!-- fourth col -->
-        <div class="w-1/5">
+        <div class="">
           <h2 class="text-white font-medium text-[22px] mb-6">Shop</h2>
           <ul class="flex flex-col gap-4">
             <li>
