@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bg-gray-very-light": "#FAFAFA",
-        "bg-gray-light-medium": "#EDEDED",
-        "bg-amber-dark": "#BEAF7C",
-        "bg-gray-200-custom": "#EBEBEB",
+        "gray-very-light": "#FAFAFA",
+        "gray-light-medium": "#EDEDED",
+        "amber-dark": "#BEAF7C",
+        "gray-200-custom": "#EBEBEB",
       },
       container: {
         center: "true",

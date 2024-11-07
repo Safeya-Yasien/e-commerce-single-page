@@ -5,3 +5,7 @@
 .active-link {
   @apply text-[#1E1E1E];
 }
+
+body {
+  font-family: "Inter", sans-serif;
+}

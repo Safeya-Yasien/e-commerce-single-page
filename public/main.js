@@ -1,3 +1,4 @@
+// menu bar
 function toggleMenu() {
   const navbarMobile = document.getElementById("navbar-mobile");
   navbarMobile.classList.toggle("hidden");
@@ -13,8 +14,12 @@ function setActiveLink(event) {
 
   event.currentTarget.classList.add("active-link");
 }
-
-// Attach event listener to each link
 document.querySelectorAll("#navbar a, #navbar-mobile a").forEach((link) => {
   link.addEventListener("click", setActiveLink);
 });
+
+// search bar
+function handleSearchSubmit(event) {
+  event.preventDefault();
+  const searchInput = document.querySelector("#search-input");
+}

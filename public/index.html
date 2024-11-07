@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output-style.css" />
+    <!-- fontawsome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body class="bg-gray-200 overflow-x-hidden">
-    <div class="container px-4">
+  <body class="bg-gray-very-light overflow-x-hidden">
+    <div class="container px-8">
       <!-- top header -->
       <div class="flex items-center justify-between h-16">
         <!-- left side -->
@@ -119,7 +132,90 @@
           </select>
         </div>
       </div>
-      <div>main header</div>
+
+      <!-- header -->
+      <div class="h-[1px] bg-gray-200-custom mb-[15px]"></div>
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div>
+          <a href="#" class="text-2xl uppercase">Logo</a>
+        </div>
+        <!-- search -->
+        <form
+          class="bg-gray-light-medium relative flex items-center rounded-md p-3 gap-2"
+          onsubmit="handleSearchSubmit(event)"
+          id="search-form"
+        >
+          <input
+            type="text"
+            placeholder="Search Parachute "
+            class="bg-transparent outline-none text-sm"
+            id="search-input"
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass text-[#9BABB5]"></i>
+          </button>
+        </form>
+        <!-- icons -->
+        <div class="flex items-center gap-4">
+          <button>
+            <i class="fa-regular fa-heart text-lg"></i>
+          </button>
+          <button class="flex items-center gap-2">
+            <i class="fa-regular fa-user text-lg"></i>
+            <span class="text-[15px]">My Account</span>
+          </button>
+          <button class="bg-[#f2f2f2] rounded-md p-3 flex items-center gap-2">
+            <i class="fa-solid fa-cart-plus text-lg"></i>
+            <span class="text-[15px]">Shopping cart</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="h-[1px] bg-gray-200-custom mt-[15px] mb-[15px]"></div>
+      <!-- filter -->
+      <ul class="flex items-center justify-center gap-3 py-2">
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Bedding</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Inserts</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Bath</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Robes + Loungewear</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Furniture</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Decor + Living</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Featured</option>
+          </select>
+        </li>
+        <li>
+          <select class="bg-transparent outline-none text-[#262626]">
+            <option>Last Chance</option>
+          </select>
+        </li>
+      </ul>
     </div>
     <script src="main.js"></script>
   </body>
