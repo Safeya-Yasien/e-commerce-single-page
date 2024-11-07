@@ -20,7 +20,7 @@
     <title>Document</title>
   </head>
   <body class="bg-gray-very-light overflow-x-hidden">
-    <div class="container px-8">
+    <div class="container px-8 h-screen">
       <!-- top header -->
       <div class="flex items-center justify-between h-16">
         <!-- left side -->
@@ -216,6 +216,113 @@
           </select>
         </li>
       </ul>
+
+      <!-- content -->
+      <div class="flex flex-col lg:flex-row gap-16">
+        <!-- left side -->
+        <div class="w-full lg:w-3/4">
+          <div class="bg-white p-8 flex gap-8">
+            <!-- imgs -->
+            <div class="relative w-1/2">
+              <!-- main img -->
+              <div>
+                <img src="images/default-product.png" alt="" />
+              </div>
+              <!-- small imgs -->
+              <div class="flex justify-between gap-4 mt-8">
+                <div class="w-1/4">
+                  <img src="images/style-1.png" alt="style-1" />
+                </div>
+                <div class="w-1/4">
+                  <img src="images/style-2.png" alt="style-2" />
+                </div>
+                <div class="w-1/4">
+                  <img src="images/style-3.png" alt="style-3" />
+                </div>
+                <div class="w-1/4">
+                  <img src="images/style-4.png" alt="style-4" />
+                </div>
+              </div>
+              <!-- zoom icon -->
+              <button
+                class="rotate-90 text-3xl text-[#00000066] absolute right-0 top-0"
+              >
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </button>
+            </div>
+            <!-- info -->
+            <div class="flex flex-col gap-6 w-1/2">
+              <h1 class="text-[#374957] text-[22px] font-[600]">
+                Brushed Cotton Venice Set
+              </h1>
+              <!-- rate -->
+              <div class="flex items-center gap-3">
+                <ul class="flex items-center gap-2">
+                  <li>
+                    <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star text-[#FEAB2F] text-lg"></i>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-star text-[#00000080] text-lg"></i>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-star text-[#00000080] text-lg"></i>
+                  </li>
+                </ul>
+                <span class="text-[15px] text-[#6C757D]">5 on 22 reviews</span>
+              </div>
+              <!-- description -->
+              <p class="text-sm text-[#374957CC] font-[300]">
+                Protect your duvet insert while keeping cozy; this cover feels
+                as good as it looks. Crafted in Portugal from 100% premium,
+                certified long-staple Egyptian cotton – our percale sheets are
+                lightweight and durable with a crisp finish that only gets
+                better with time.
+              </p>
+              <!-- include -->
+              <div class="flex flex-col gap-3">
+                <h4 class="text-sm font-medium text-[#374957]">
+                  What's Included:
+                </h4>
+                <ul class="flex flex-col gap-2">
+                  <li class="text-[#6C757D] text-sm font[400]">
+                    1 x Duvet Cover
+                  </li>
+                  <li class="text-[#6C757D] text-sm font[400]">1 x Sham Set</li>
+                </ul>
+              </div>
+              <!-- color -->
+              <div class="h-[1px] bg-gray-200-custom"></div>
+
+              <div class="flex flex-col gap-3">
+                <h4 class="uppercase text-sm font-[400] text-[#374957]">
+                  Color
+                </h4>
+                <ul class="flex items-center gap-2">
+                  <li
+                    class="w-[22px] h-[22px] rounded-full bg-white border-[1px] border-black"
+                  ></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#F7F6EB]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#D6D3C9]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#B4B4B4]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#C08E85]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#879AAC]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#B4B4B4]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#1E1E1E]"></li>
+                  <li class="w-[22px] h-[22px] rounded-full bg-[#FEAB2F]"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="w-full lg:w-3/12">right</div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
