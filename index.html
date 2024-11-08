@@ -597,6 +597,7 @@
                 <h2 class="font-semibold text-xl text-[#374957]">
                   Write A Review
                 </h2>
+
                 <form class="flex flex-col gap-4">
                   <div class="flex gap-4">
                     <div class="flex flex-col gap-1 w-2/6">
@@ -612,6 +613,7 @@
                         name="stars"
                         placeholder="5 Stars Rating"
                         class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                        aria-labelledby="stars-label"
                       />
                     </div>
                     <div class="flex flex-col gap-1 w-2/6">
@@ -627,6 +629,7 @@
                         name="name"
                         placeholder="Your Name"
                         class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                        aria-labelledby="name-label"
                       />
                     </div>
                     <div class="flex flex-col gap-1 w-2/6">
@@ -640,8 +643,9 @@
                         type="email"
                         id="email"
                         name="email"
-                        placeholder=" Email Address"
+                        placeholder="Email Address"
                         class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none"
+                        aria-labelledby="email-label"
                       />
                     </div>
                   </div>
@@ -654,9 +658,12 @@
                       Your Review
                     </label>
                     <textarea
+                      id="review"
+                      name="review"
                       class="text-[11px] bg-gray-200-custom p-3 rounded-md outline-none h-36 resize-none"
-                    >
-                    </textarea>
+                      placeholder="Write your review here"
+                      aria-labelledby="review-label"
+                    ></textarea>
                   </div>
 
                   <button
