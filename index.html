@@ -616,12 +616,9 @@
                 </h2>
 
                 <form class="flex flex-col gap-4">
-                  <div class="flex gap-4">
-                    <div class="flex flex-col gap-1 w-2/6">
-                      <label
-                        for="stars"
-                        class="font-normal text-[10px] text-[#374957]"
-                      >
+                  <div class="flex flex-col gap-1 lg:flex-row lg:w-full lg:gap-4">
+                    <div class="flex flex-col flex-1 gap-1 w-full lg:w-1/4">
+                      <label for="stars" class="font-normal text-[10px] text-[#374957]">
                         Review Stars
                       </label>
                       <input
@@ -633,11 +630,8 @@
                         aria-labelledby="stars-label"
                       />
                     </div>
-                    <div class="flex flex-col gap-1 w-2/6">
-                      <label
-                        for="name"
-                        class="font-normal text-[10px] text-[#374957]"
-                      >
+                    <div class="flex flex-col flex-1 gap-1 w-full lg:w-1/4">
+                      <label for="name" class="font-normal text-[10px] text-[#374957]">
                         Your Name
                       </label>
                       <input
@@ -649,11 +643,8 @@
                         aria-labelledby="name-label"
                       />
                     </div>
-                    <div class="flex flex-col gap-1 w-2/6">
-                      <label
-                        for="email"
-                        class="font-normal text-[10px] text-[#374957]"
-                      >
+                    <div class="flex flex-col flex-1 gap-1 w-full lg:w-1/4">
+                      <label for="email" class="font-normal text-[10px] text-[#374957]">
                         Email Address
                       </label>
                       <input
@@ -666,12 +657,9 @@
                       />
                     </div>
                   </div>
-
+                
                   <div class="flex flex-col gap-1 w-full">
-                    <label
-                      for="review"
-                      class="font-normal text-[10px] text-[#374957]"
-                    >
+                    <label for="review" class="font-normal text-[10px] text-[#374957]">
                       Your Review
                     </label>
                     <textarea
@@ -682,7 +670,7 @@
                       aria-labelledby="review-label"
                     ></textarea>
                   </div>
-
+                
                   <button
                     type="submit"
                     class="rounded-md bg-amber-dark text-white font-semibold text-[11px] w-[150px] h-[40px] flex items-center justify-center cursor-pointer"
@@ -691,6 +679,8 @@
                     Post Your Review
                   </button>
                 </form>
+                
+
               </div>
             </div>
           </div>
