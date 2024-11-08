@@ -34,6 +34,7 @@
             type="button"
             class="lg:hidden"
             id="menu-button"
+            aria-label="Toggle menu"
             onclick="toggleMenu()"
           >
             <span class="sr-only">Open main menu</span>
@@ -55,32 +56,54 @@
           </button>
           <ul class="hidden lg:flex items-center gap-4" id="navbar">
             <li>
-              <a href="#" class="active-link text-[12px] font-medium"
+              <a
+                href="#"
+                class="active-link text-[12px] font-medium"
+                aria-label="go to About Us page"
                 >About Us</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium"
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Sustainability page"
                 >Sustainability</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Trade page"
+              >
                 Trade</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to    Design Services page"
+              >
                 Design Services</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Stores page"
+              >
                 Stores</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Blog page"
+              >
                 Blog</a
               >
             </li>
@@ -92,32 +115,54 @@
             id="navbar-mobile"
           >
             <li>
-              <a href="#" class="active-link text-[12px] font-medium"
+              <a
+                href="#"
+                class="active-link text-[12px] font-medium"
+                aria-label="go to About Us page"
                 >About Us</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium"
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Sustainability page"
                 >Sustainability</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Trade page"
+              >
                 Trade</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to    Design Services page"
+              >
                 Design Services</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Stores page"
+              >
                 Stores</a
               >
             </li>
             <li>
-              <a href="#" class="text-[#787878] text-[12px] font-medium">
+              <a
+                href="#"
+                class="text-[#787878] text-[12px] font-medium"
+                aria-label="go to Blog page"
+              >
                 Blog</a
               >
             </li>
@@ -138,7 +183,9 @@
       <div class="flex items-center justify-between flex-wrap gap-4">
         <!-- logo -->
         <div>
-          <a href="#" class="text-2xl uppercase">Logo</a>
+          <a href="#" class="text-2xl uppercase" aria-label="go to home page"
+            >Logo</a
+          >
         </div>
         <!-- search -->
         <form
@@ -388,7 +435,10 @@
                 <div class="flex justify-between">
                   <!-- img + name -->
                   <div class="flex gap-3">
-                    <img src="public/images/testimonial-1.png" alt="testimonial-1" />
+                    <img
+                      src="public/images/testimonial-1.png"
+                      alt="testimonial-1"
+                    />
                     <div>
                       <h4 class="font-medium text-sm text-[#374957] mb-1">
                         Ahmed Mohamed
@@ -434,7 +484,10 @@
                 <div class="flex justify-between">
                   <!-- img + name -->
                   <div class="flex gap-3">
-                    <img src="public/images/testimonial-2.png" alt="testimonial-2" />
+                    <img
+                      src="public/images/testimonial-2.png"
+                      alt="testimonial-2"
+                    />
                     <div>
                       <h4 class="font-medium text-sm text-[#374957] mb-1">
                         Ahmed Mohamed
@@ -609,7 +662,9 @@
 
             <p class="font-medium text-[12px] text-[#374957CC]">
               As low as $33 every 2 weeks with Affirm.
-              <a href="#" class="text-amber-dark"> Learn more </a>
+              <a href="#" class="text-amber-dark" aria-label="learn more">
+                Learn more
+              </a>
             </p>
             <div class="h-[1px] bg-gray-200-custom"></div>
 
@@ -655,12 +710,13 @@
               <div
                 class="bg-gray-200-custom rounded-md flex items-center justify-between py-2 px-4 w-[100px] text-[#495663]"
               >
-                <button class="">-</button>
+                <button class="" aria-label="Decrease quantity">-</button>
                 <span>1</span>
-                <button>+</button>
+                <button aria-label="Increase quantity">+</button>
               </div>
               <button
                 class="bg-amber-dark text-white font-medium text-[15px] rounded-md w-[150px] h-[40px]"
+                aria-label="add to cart"
               >
                 Add to cart
               </button>
@@ -676,7 +732,10 @@
             <ul class="flex flex-col gap-6">
               <li class="flex gap-4 items-center">
                 <div>
-                  <img src="public/images/perfection-1.png" alt="perfection-1" />
+                  <img
+                    src="public/images/perfection-1.png"
+                    alt="perfection-1"
+                  />
                 </div>
                 <div>
                   <p class="font-medium text-sm text-[#3B3B3B]">
@@ -691,7 +750,10 @@
               </li>
               <li class="flex gap-4">
                 <div>
-                  <img src="public/images/perfection-2.png" alt="perfection-2" />
+                  <img
+                    src="public/images/perfection-2.png"
+                    alt="perfection-2"
+                  />
                 </div>
                 <div>
                   <p class="font-medium text-sm text-[#3B3B3B]">
@@ -706,7 +768,10 @@
               </li>
               <li class="flex gap-4">
                 <div>
-                  <img src="public/images/perfection-3.png" alt="perfection 3" />
+                  <img
+                    src="public/images/perfection-3.png"
+                    alt="perfection 3"
+                  />
                 </div>
                 <div>
                   <p class="font-medium text-sm text-[#3B3B3B]">
@@ -726,11 +791,13 @@
           <div class="flex gap-4">
             <button
               class="w-10 h-[38px] border-2 border-amber-dark text-[#BEAF7C] rounded-sm hover:bg-amber-dark hover:text-white"
+              aria-label="Previous"
             >
               <i class="fa-solid fa-arrow-left"></i>
             </button>
             <button
               class="w-10 h-[38px] text-white bg-amber-dark border-2 border-amber-dark rounded-sm"
+              aria-label="Next"
             >
               <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -749,7 +816,7 @@
             >
               <!-- img -->
               <div class="flex items-center justify-center">
-                <img src="public/images/new-1.png" alt="new arrival 1"/>
+                <img src="public/images/new-1.png" alt="new arrival 1" />
               </div>
               <!-- details -->
               <div class="flex flex-col justify-between gap-12">
@@ -797,6 +864,7 @@
                   </div>
                   <button
                     class="text-[#374957] w-[36px] h-[36px] rounded-full transition-all duration-300 hover:bg-amber-dark hover:text-white"
+                    aria-label="Add to cart"
                   >
                     <i class="fa-solid fa-cart-shopping"></i>
                   </button>
@@ -807,10 +875,10 @@
               <div
                 class="translate-x-10 flex flex-col gap-4 absolute top-4 right-4 transition-all duration-500 group-hover:translate-x-0"
               >
-                <button>
+                <button aria-label="View larger image">
                   <i class="fa-solid fa-expand"></i>
                 </button>
-                <button>
+                <button aria-label="Add to wishlist">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </div>
@@ -821,7 +889,7 @@
             >
               <!-- img -->
               <div class="flex items-center justify-center">
-                <img src="public/images/new-2.png" alt="new arrival 2"/>
+                <img src="public/images/new-2.png" alt="new arrival 2" />
               </div>
               <!-- details -->
               <div class="flex flex-col justify-between gap-12">
@@ -869,6 +937,7 @@
                   </div>
                   <button
                     class="text-[#374957] w-[36px] h-[36px] rounded-full transition-all duration-300 hover:bg-amber-dark hover:text-white"
+                    aria-label="Add to cart"
                   >
                     <i class="fa-solid fa-cart-shopping"></i>
                   </button>
@@ -879,10 +948,10 @@
               <div
                 class="translate-x-10 flex flex-col gap-4 absolute top-4 right-4 transition-all duration-500 group-hover:translate-x-0"
               >
-                <button>
+                <button aria-label="View larger image">
                   <i class="fa-solid fa-expand"></i>
                 </button>
-                <button>
+                <button aria-label="Add to wishlist">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </div>
@@ -893,7 +962,7 @@
             >
               <!-- img -->
               <div class="flex items-center justify-center">
-                <img src="public/images/new-3.png" alt="new arrival 3"/>
+                <img src="public/images/new-3.png" alt="new arrival 3" />
               </div>
               <!-- details -->
               <div class="flex flex-col justify-between gap-12">
@@ -941,6 +1010,7 @@
                   </div>
                   <button
                     class="text-[#374957] w-[36px] h-[36px] rounded-full transition-all duration-300 hover:bg-amber-dark hover:text-white"
+                    aria-label="Add to cart"
                   >
                     <i class="fa-solid fa-cart-shopping"></i>
                   </button>
@@ -951,10 +1021,11 @@
               <div
                 class="translate-x-10 flex flex-col gap-4 absolute top-4 right-4 transition-all duration-500 group-hover:translate-x-0"
               >
-                <button>
+                <button aria-label="View larger image">
                   <i class="fa-solid fa-expand"></i>
                 </button>
-                <button>
+
+                <button aria-label="Add to wishlist">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </div>
@@ -1012,6 +1083,7 @@
                   </div>
                   <button
                     class="text-[#374957] w-[36px] h-[36px] rounded-full transition-all duration-300 hover:bg-amber-dark hover:text-white"
+                    aria-label="Add to cart"
                   >
                     <i class="fa-solid fa-cart-shopping"></i>
                   </button>
@@ -1022,10 +1094,11 @@
               <div
                 class="translate-x-10 flex flex-col gap-4 absolute top-4 right-4 transition-all duration-500 group-hover:translate-x-0"
               >
-                <button>
+                <button aria-label="View larger image">
                   <i class="fa-solid fa-expand"></i>
                 </button>
-                <button>
+
+                <button aria-label="Add to wishlist">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </div>
@@ -1083,6 +1156,7 @@
                   </div>
                   <button
                     class="text-[#374957] w-[36px] h-[36px] rounded-full transition-all duration-300 hover:bg-amber-dark hover:text-white"
+                    aria-label="Add to cart"
                   >
                     <i class="fa-solid fa-cart-shopping"></i>
                   </button>
@@ -1093,10 +1167,11 @@
               <div
                 class="translate-x-10 flex flex-col gap-4 absolute top-4 right-4 transition-all duration-500 group-hover:translate-x-0"
               >
-                <button>
+                <button aria-label="View larger image">
                   <i class="fa-solid fa-expand"></i>
                 </button>
-                <button>
+
+                <button aria-label="Add to wishlist">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </div>
