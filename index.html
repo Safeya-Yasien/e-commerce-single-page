@@ -200,20 +200,23 @@
             class="bg-transparent outline-none text-sm"
             id="search-input"
           />
-          <button type="submit">
+          <button type="submit" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass text-[#9BABB5]"></i>
           </button>
         </form>
         <!-- icons -->
         <div class="flex items-center gap-4">
-          <button>
+          <button aria-label="Add to wishlist">
             <i class="fa-regular fa-heart text-lg"></i>
           </button>
-          <button class="flex items-center gap-2">
+          <button class="flex items-center gap-2" aria-label="My account">
             <i class="fa-regular fa-user text-lg"></i>
             <span class="text-[15px]">My Account</span>
           </button>
-          <button class="bg-[#f2f2f2] rounded-md p-3 flex items-center gap-2">
+          <button
+            class="bg-[#f2f2f2] rounded-md p-3 flex items-center gap-2"
+            aria-label="Shopping cart"
+          >
             <i class="fa-solid fa-cart-plus text-lg"></i>
             <span class="text-[15px]">Shopping cart</span>
           </button>
@@ -301,6 +304,7 @@
               <!-- zoom icon -->
               <button
                 class="rotate-90 text-3xl text-[#00000066] absolute right-0 top-0"
+                aria-label="Zoom in"
               >
                 <i class="fa-solid fa-magnifying-glass-plus"></i>
               </button>
@@ -396,29 +400,44 @@
             <!-- filter review bar -->
             <ul class="flex items-center justify-center flex-wrap gap-4">
               <li>
-                <button class="font-medium text-sm text-[#787878]">
+                <button
+                  class="font-medium text-sm text-[#787878]"
+                  aria-label="About section"
+                >
                   About
                 </button>
               </li>
               <li>
-                <button class="font-medium text-sm text-[#787878]">
+                <button
+                  class="font-medium text-sm text-[#787878]"
+                  aria-label="Details section"
+                >
                   Details
                 </button>
               </li>
               <li>
-                <button class="font-medium text-sm text-[#787878]">
+                <button
+                  class="font-medium text-sm text-[#787878]"
+                  aria-label="Materials and care information"
+                >
                   Materials + Care
                 </button>
               </li>
               <li>
-                <button class="font-medium text-sm text-[#787878]">
+                <button
+                  class="font-medium text-sm text-[#787878]"
+                  aria-label="Shipping and returns information"
+                >
                   Shipping + Returns
                 </button>
               </li>
               <li
-                class="relative before:content-[''] before:absolute before:-bottom-4 before: before:w-full before:h-[2px] before:bg-[#BEAF7C]"
+                class="relative before:content-[''] before:absolute before:-bottom-4 before:w-full before:h-[2px] before:bg-[#BEAF7C]"
               >
-                <button class="font-medium text-sm text-[#787878]">
+                <button
+                  class="font-medium text-sm text-[#787878]"
+                  aria-label="Read reviews"
+                >
                   Reviews
                 </button>
                 <span
@@ -427,6 +446,7 @@
                 >
               </li>
             </ul>
+
             <div class="h-[1px] bg-gray-200-custom mt-[15px] mb-[15px]"></div>
 
             <!-- comments -->
@@ -534,33 +554,39 @@
               <div class="flex items-center justify-center gap-4">
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                  aria-label="Previous page"
                 >
                   <i class="fa-solid fa-angle-left"></i>
                 </button>
 
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                  aria-label="Page 1"
                 >
                   1
                 </button>
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                  aria-label="Page 2"
                 >
                   2
                 </button>
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center active-pagination-number"
+                  aria-label="Page 3"
                 >
                   3
                 </button>
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                  aria-label="Page 4"
                 >
                   4
                 </button>
 
                 <button
                   class="w-[30px] h-[30px] cursor-pointer bg-[#F0F0F0] transition-all duration-300 hover:bg-amber-dark hover:text-white rounded-sm text-[#374957] text-[12px] font-semibold flex items-center justify-center"
+                  aria-label="Next page"
                 >
                   <i class="fa-solid fa-angle-right"></i>
                 </button>
@@ -636,6 +662,7 @@
                   <button
                     type="submit"
                     class="rounded-md bg-amber-dark text-white font-semibold text-[11px] w-[150px] h-[40px] flex items-center justify-center cursor-pointer"
+                    aria-label="Submit your review"
                   >
                     Post Your Review
                   </button>
