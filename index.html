@@ -200,7 +200,6 @@
           class="bg-gray-light-medium relative flex items-center rounded-md p-3 gap-2 w-[358px]"
           onsubmit="handleSearchSubmit(event)"
           id="search-form"
-          aria-labelledby="search-form"
         >
           <label for="search-input" class="sr-only">Search Parachute</label>
           <input
@@ -208,10 +207,9 @@
             placeholder="Search Parachute "
             class="bg-transparent outline-none text-sm w-full"
             id="search-input"
-            role="search"
             aria-label="search-input"
           />
-          <button type="submit" aria-label="Search" aria-label="Search">
+          <button type="submit" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass text-[#9BABB5]"></i>
           </button>
         </form>
@@ -283,6 +281,7 @@
           </select>
         </li>
         <li class="flex flex-col gap-1 w-1/8">
+          <label for="featured" class="sr-only">Featured</label>
           <select
             id="featured"
             class="bg-transparent outline-none text-[#262626]"
@@ -291,6 +290,7 @@
           </select>
         </li>
         <li class="flex flex-col gap-1 w-1/8">
+          <label for="lastChance" class="sr-only">Last Chance</label>
           <select
             id="lastChance"
             class="bg-transparent outline-none text-[#262626]"
@@ -377,9 +377,9 @@
               </p>
               <!-- include -->
               <div class="flex flex-col gap-3">
-                <h4 class="text-sm font-medium text-[#374957]">
+                <h2 class="text-sm font-medium text-[#374957]">
                   What's Included:
-                </h4>
+                </h2>
                 <ul class="flex flex-col gap-2">
                   <li class="text-[#6C757D] text-sm font[400]">
                     1 x Duvet Cover
@@ -391,9 +391,9 @@
               <div class="h-[1px] bg-gray-200-custom"></div>
 
               <div class="flex flex-col gap-3">
-                <h4 class="uppercase text-sm font-normal text-[#374957]">
+                <h2 class="uppercase text-sm font-normal text-[#374957]">
                   Color
-                </h4>
+                </h2>
                 <ul class="flex flex-wrap items-center gap-2">
                   <li
                     class="w-[22px] h-[22px] rounded-full bg-white border-[1px] border-black cursor-pointer"
@@ -496,9 +496,9 @@
                       class="object-cover"
                     />
                     <div>
-                      <h4 class="font-medium text-sm text-[#374957] mb-1">
+                      <h2 class="font-medium text-sm text-[#374957] mb-1">
                         Ahmed Mohamed
-                      </h4>
+                      </h2>
                       <p class="font-normal text-[10px] text-[#00000080]">
                         24 January 2023
                       </p>
@@ -548,9 +548,9 @@
                       class="object-cover"
                     />
                     <div>
-                      <h4 class="font-medium text-sm text-[#374957] mb-1">
+                      <h2 class="font-medium text-sm text-[#374957] mb-1">
                         Ahmed Mohamed
-                      </h4>
+                      </h2>
                       <p class="font-normal text-[10px] text-[#00000080]">
                         24 January 2023
                       </p>
@@ -746,7 +746,7 @@
             <div class="h-[1px] bg-gray-200-custom"></div>
 
             <div class="flex flex-col gap-4">
-              <h4 class="text-sm font-medium text-[#374957]">Size: Twin XL</h4>
+              <h2 class="text-sm font-medium text-[#374957]">Size: Twin XL</h2>
               <ul class="flex items-center flex-wrap gap-2">
                 <li
                   class="bg-[#F9F9F9] rounded-md w-[60px] h-[30px] text-[#262626] text-[13px] font-normal flex items-center justify-center"
